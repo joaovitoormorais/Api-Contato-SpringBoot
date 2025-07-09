@@ -39,6 +39,10 @@ public class ContatoService {
     }
 
     private void findByNome(Contato contato) {
+       Optional<Contato> con = contatoRepository.findByNome(contato.getNome());
+       if(!con.get().getNome().isEmpty()) {
+           throw new DataIntegrityViolationException("Já existe um contato com esse nome.");
+       }
     }
 
     public void delete(Integer id) {
