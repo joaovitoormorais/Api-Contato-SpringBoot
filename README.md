@@ -12,7 +12,6 @@ Este é um projeto de API RESTful desenvolvida com **Spring Boot** que permite g
 - Spring Data JPA
 - Spring Boot Dev Tools
 - H2 Database
-- PostgreSQL
 - ModelMapper
 - Maven
 
